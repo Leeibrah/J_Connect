@@ -13,9 +13,15 @@
 
 Route::controller('/test','TestController');
 
+//Super Administrator
+
+Route::group(array(),function(){
+    Route::controller('/supervisor','SuperController');
+});
+
 //Back end controllers
 Route::group(array(),function(){
-   Route::get('/admin','BackController@getIndex');
+   Route::controller('/admin','BackController');
 });
 
 //Front end controllers group 
