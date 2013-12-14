@@ -1,6 +1,8 @@
 <!-- js placed at the end of the document so the pages load faster -->
 <?php $bases_assets="assets/themes/flat/admin/template_content/"; ?>
     <script src='<?=asset("{$bases_assets}js/jquery.js")?>'></script>
+                 <!--script for this page only-->
+    <script src='<?=asset("{$bases_assets}js/external-dragging-calendar.js")?>'></script>
     <script src='<?=asset("{$bases_assets}js/bootstrap.min.js")?>'></script>
     <script src='<?=asset("{$bases_assets}js/jquery.dcjqaccordion.2.7.js")?>'></script>
     <script src='<?=asset("{$bases_assets}js/jquery.scrollTo.min.js")?>'></script>
@@ -13,5 +15,7 @@
     <!--script for this page only-->
     <script src='<?=asset("{$bases_assets}js/sparkline-chart.js")?>'></script>
     <script src='<?=asset("{$bases_assets}js/easy-pie-chart.js")?>'></script>
+
+
   <script>
   </script>

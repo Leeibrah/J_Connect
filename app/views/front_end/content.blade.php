@@ -1,9 +1,9 @@
 <body>
 <!-- content start-->
 
-{{$content}}
-  <div class="container">
 
+  <div class="container">
+{{$content}}
   </div>
 <!-- content end-->
 </body>

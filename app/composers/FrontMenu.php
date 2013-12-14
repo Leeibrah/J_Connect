@@ -6,7 +6,7 @@ class FrontMenu {
 	protected $can_be_active=array('home','about','services','pricing','contact');
     function compose($view){
         $view->with('home','#');
-        $this->_active_menu($view);
+        Active_menu::highlight_menu(1, $this->can_be_active, $view);
     }
     protected function _active_menu(&$view)
     {

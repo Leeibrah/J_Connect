@@ -6,7 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Active_menu' => $baseDir . '/app/helpers/active_menu.php',
     'BackController' => $baseDir . '/app/controllers/BackController.php',
+    'BackMenu' => $baseDir . '/app/composers/BackMenu.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'DatabaseSeeder' => $baseDir . '/app/database/seeds/DatabaseSeeder.php',
     'FrontController' => $baseDir . '/app/controllers/FrontController.php',

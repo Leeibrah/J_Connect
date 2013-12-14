@@ -21,7 +21,10 @@ Route::group(array(),function(){
 
 //Back end controllers
 Route::group(array(),function(){
+   //TODO Remove this extra route. For now used to route images
+   Route::controller('/admin/admin','BackController');
    Route::controller('/admin','BackController');
+   
 });
 
 //Front end controllers group 
