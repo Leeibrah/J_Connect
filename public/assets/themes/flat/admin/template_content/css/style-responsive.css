@@ -109,9 +109,15 @@
 
     /*---------*/
 
+    .modal-footer .btn {
+        margin-bottom: 0px !important;
+    }
+
     .btn {
         margin-bottom: 5px;
     }
+
+
 
 
     .mail-box aside {
@@ -357,6 +363,16 @@
     .ms-container {
         width: 100%;
     }
+
+    .cmt-form {
+        display: inline-block;
+        width: 84%;
+    }
+
+    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+        background-color: #ccc;
+        border-color:#ccc ;
+    }
 }
 
 @media (max-width:320px) {
@@ -411,6 +427,11 @@
     }
     .lock-input {
         width: 82%;
+    }
+
+    .cmt-form {
+        display: inline-block;
+        width: 75%;
     }
 }
 
