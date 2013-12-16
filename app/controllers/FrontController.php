@@ -25,15 +25,39 @@ class FrontController extends \BaseController {
     function getContact(){
         return $this->getStatic('contact');
     }
+    function getChoose(){
+        return $this->getStatic('choose');
+    }
+    function getLogin(){
+        return $this->_staticTemp('login');
+    }
+    function getContractor(){
+        return $this->_staticTemp('contractor');
+    }
+    function getClient(){
+        return $this->_staticTemp('client');
+    }
+    function getRegister(){
+        return $this->_staticTemp('register');
+    }
+
+
     function getImg(){
        $img= Request::path();
         $path=public_path("assets/themes/flat/frontend/template_content/{$img}");   
         $image=File::get($path);  
         return Response::make($image, 200, array('content-type' => 'image/jpg'));
     }
+
     private function getStatic($name){
         $content=View::make("content.static.{$name}");
         return View::make('front_end.general', compact('content'));
         
+    }
+
+    protected function _staticTemp($name){
+        $content= View::make("front_end.registration.{$name}");
+        
+        return View::make('front_end.registration.general',compact('content'));
     }
 }

@@ -29,6 +29,7 @@ class BackController extends \BaseController {
     function getSearch(){
         return $this->_staticPage('search');
     }
+   
     /**
      * Load a generic static view
      */
@@ -37,6 +38,13 @@ class BackController extends \BaseController {
         
         return View::make('back_end.general',compact('content'));
     }
+
+    // protected function _staticTemp($name){
+    //     $content= View::make("back_end.widgets.{$name}");
+        
+    //     return View::make('back_end.temp',compact('content'));
+    // }
+
     function getImg() {
         $img = Request::path();
         $img=str_replace('admin/', '', $img);

@@ -3,7 +3,7 @@
  * Populates the front end menu
  */
 class FrontMenu {
-	protected $can_be_active=array('home','about','services','pricing','contact');
+	protected $can_be_active=array('home','about','services','pricing','contact','register_client');
     function compose($view){
         $view->with('home','#');
         Active_menu::highlight_menu(1, $this->can_be_active, $view);
@@ -20,5 +20,6 @@ class FrontMenu {
             }
         });
     }
+
 }
 
