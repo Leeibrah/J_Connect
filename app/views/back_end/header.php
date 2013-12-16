@@ -4,7 +4,7 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="index.html" class="logo">Jobs<span>Microblog</span></a>
+            <a href="{{ URL::to('home') }}" class="logo">Jobs<span>Microblog</span></a>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
