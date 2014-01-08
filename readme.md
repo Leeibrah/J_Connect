@@ -1,5 +1,2 @@
 ##
-Job microblog application powered by Laravel
-
-Author: Chencha Jacob
-Client: Ajith
+Job application powered by Laravel to connect employer and employee.
